@@ -4,6 +4,8 @@ import io.reactivex.Observable;
 import org.junit.jupiter.api.Test;
 
 public class ReactiveTest {
+
+    //rx design pattern
     @Test
     void testReactiveUsingRXJava() {
         Observable<Long> longObservable =

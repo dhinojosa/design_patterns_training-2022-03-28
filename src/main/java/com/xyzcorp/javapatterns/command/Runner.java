@@ -9,8 +9,12 @@ public class Runner {
         Map<String, Action> commandMap = new HashMap<>();
         Target target = new Target();
 
-        Action action1 = () ->
+        Action action1 = new Action() {
+            @Override
+            public void execute() {
                 target.displayTime(LocalDateTime.now());
+            }
+        };
         Action action2 = () ->
                 target.displayTime(LocalDateTime.now().minusHours(3));
 
